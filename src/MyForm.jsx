@@ -3,12 +3,15 @@ import React from "react";
 class MyForm extends React.Component {
   constructor(props) {
     super(props);
+
+    // pembuatan state
     this.state = {
       nama: "",
       email: "",
       gender: "",
     };
 
+    // handler binding untuk bisa diakses di children component
     this.onChangeEmailHandler = this.onChangeEmailHandler.bind(this);
     this.onChangeGenderHandler = this.onChangeGenderHandler.bind(this);
     this.onChangeNamaHandler = this.onChangeNamaHandler.bind(this);
